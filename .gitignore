@@ -1,0 +1,12 @@
+*.ipr
+*.iml
+*.iws
+.gradle/*
+buildSrc/.gradle/*
+.idea/*
+build/*
+buildSrc/build/*
+logs/*
+out/*
+target/*
+tmp/*

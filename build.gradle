@@ -1,0 +1,20 @@
+plugins {
+    id "io.ratpack.ratpack-groovy" version "1.8.0"
+    id "com.github.johnrengelman.shadow" version "5.2.0"
+    id "groovy"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.codehaus.groovy:groovy-all:${groovy_version}"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+
+    testCompile ratpack.dependency('test')
+    testCompile ratpack.dependency('groovy-test')
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile "com.github.tomakehurst:wiremock-standalone:2.26.3"
+    testCompile "com.github.tomjankes:wiremock-groovy:0.2.0"
+}
